@@ -7,8 +7,28 @@ body{
     background-size: cover;
 }
 
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
 nav{
-    text-align: right;
+    position: absolute;
+    left: 900px;
+    top: 15px;
+}
+
+div#projetos a{
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.486);
+}
+
+div#projetos a:hover{
+    font-size: 20px;
+    
 }
 
 section#sobre h1{
@@ -50,5 +70,12 @@ section#social img{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    padding: 10px;
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.411);
+    box-sizing: border-box;
+}
+
+section#social img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.425);
+    transform: translate(-3px, -3px);
 }
