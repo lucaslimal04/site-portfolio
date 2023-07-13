@@ -49,7 +49,17 @@
             padding: 100px;
         }
 
-        div#android img:hover{
+        
+
+        div#cordel img{
+            border-radius: 80px;
+        }
+
+        
+
+        @media screen and (min-width:769px){
+
+            div#android img:hover{
             border-radius: 40px;
             border: 1px solid black;
             transition: .5s;
@@ -58,15 +68,12 @@
             transform: translate(-3px, -3px);
         }
 
-        div#cordel img{
-            border-radius: 80px;
-        }
-
-        div#cordel img:hover{
+            div#cordel img:hover{
             transition: .5s;
             width: 400px;
             height: 130px;
             transform: translate(-3px, -3px);
+        }
         }
 
         @media screen and (max-width:768px) {
@@ -90,25 +97,13 @@
             transform: translate(-20% );
         }
 
-        div#android img:hover{
-            border-radius: 40px;
-            border: 1px solid black;
-            transition: .5s;
-            width: 350px;
-            height: 150px;
-            transform: translate(-100px, -3px);
-        }
+        
 
         div#cordel img{
             width: 250px;
         }
 
-        div#cordel img:hover{
-            transition: .5s;
-            width: 350px;
-            height: 130px;
-            transform: translate(0px, -3px);
-        }
+        
 
         }
         
