@@ -71,34 +71,35 @@
 
         @media screen and (max-width:768px) {
 
-            div#home img{
-            position: absolute;
-            width: 50px;
-            border-radius: 50%;
-            left: 15px;
-            top: 20px;
+            main{
+            border-radius: 15px;
+            margin: auto;
+            text-align: center;
+            background-color: white;
+            width: 400px;
+            height: 1000px;
+        } 
+
+        div#android img {
+
+            transform: translate(-20% );
         }
 
-            section#sobre{
-                
-            }
+        div#android img:hover{
+            border-radius: 40px;
+            border: 1px solid black;
+            transition: .5s;
+            width: 400px;
+            height: 150px;
+            transform: translate(-100px, -3px);
+        }
 
-            section#sobre h1{
-                position: absolute;
-                top: 10px;
-                left: 100px;
-            }
-
-            section#sobre h2{
-                position: absolute;
-                font-size: 18px;
-                top: 50px;
-            }
-
-            section#sobre p{
-                position: absolute;
-                top: 100px;
-            }
+        div#cordel img:hover{
+            transition: .5s;
+            width: 400px;
+            height: 130px;
+            transform: translate(0px, -3px);
+        }
 
         }
         
