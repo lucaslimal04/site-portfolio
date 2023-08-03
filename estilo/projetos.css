@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, rgb(180, 207, 207), rgb(27, 27, 253));
+}
+
+main{
+    border-radius: 15px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    width: 700px;
+    height: 1200px;
+}
+
+#home img{
+    position: absolute;
+    width: 50px;
+    border-radius: 50%;
+    left: 345px;
+    top: 27px;
+}
+
+#home img:hover{
+    width: 60px;
+    transform: translate(-3px, -3px);
+}
+
+section#sobre{
+    padding: 10px;
+}
+
+section#sobre a{
+    text-decoration: none;
+    
+}
+
+section#sobre a:hover{
+    text-decoration: underline;
+}
+
+.android{
+    margin: 100px;
+}
+
+.android img {
+    width: 350px;
+    border-radius: 80px;
+}
+
+.cordel {
+    margin: 100px;
+}
+
+.cordel img{
+    width: 350px;
+    border-radius: 80px;
+}
+
+.linkedin {
+    margin: 100px;
+}
+
+.linkedin img {
+    width: 350px;
+    border-radius: 80px;
+}
+
+@media screen and (min-width:769px) {
+
+    .android img:hover{
+    border: 1px solid black;
+    transition: .5s;
+    width: 400px;
+    height: 150px;
+    transform: translate(-3px, -3px);
+}
+
+    .cordel img:hover{
+    transition: .5s;
+    width: 400px;
+    height: 130px;
+    transform: translate(-3px, -3px);
+    }
+
+    .linkedin img:hover{
+    transition: .5s;
+    width: 400px;
+    height: 100px;
+    transform: translate(-3px, -3px);
+}
+}
+
+@media screen and (max-width:768px) {
+
+    main{
+    border-radius: 15px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    width: 350px;
+    height: 1200px;
+} 
+
+.home img{
+    position: relative;
+    left: 30px;
+}
+
+.android img {
+    width: 250px;
+    transform: translate(-20% );
+}
+
+.cordel img{
+    width: 250px;
+    transform: translate(-20% );
+}
+
+.linkedin img {
+    width: 250px;
+    transform: translate(-20% );
+}
+
+}

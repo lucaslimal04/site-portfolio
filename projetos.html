@@ -4,111 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos</title>
-    <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: linear-gradient(to bottom, rgb(180, 207, 207), rgb(27, 27, 253));
-        }
-
-        main{
-            border-radius: 15px;
-            margin: auto;
-            text-align: center;
-            background-color: white;
-            width: 700px;
-            height: 1000px;
-        }
-
-        div#home img{
-            position: absolute;
-            width: 50px;
-            border-radius: 50%;
-            left: 345px;
-            top: 27px;
-        }
-
-        div#home img:hover{
-            width: 60px;
-            transform: translate(-3px, -3px);
-        }
-
-        section#sobre{
-            padding: 10px;
-        }
-
-        section#sobre a{
-            text-decoration: none;
-            
-        }
-
-        section#sobre a:hover{
-            text-decoration: underline;
-        }
-
-        div#android{
-            padding: 100px;
-        }
-
-        
-
-        div#cordel img{
-            border-radius: 80px;
-        }
-
-        
-
-        @media screen and (min-width:769px){
-
-            div#android img:hover{
-            border-radius: 40px;
-            border: 1px solid black;
-            transition: .5s;
-            width: 400px;
-            height: 150px;
-            transform: translate(-3px, -3px);
-        }
-
-            div#cordel img:hover{
-            transition: .5s;
-            width: 400px;
-            height: 130px;
-            transform: translate(-3px, -3px);
-        }
-        }
-
-        @media screen and (max-width:768px) {
-
-            main{
-            border-radius: 15px;
-            margin: auto;
-            text-align: center;
-            background-color: white;
-            width: 350px;
-            height: 1000px;
-        } 
-
-        div#home img{
-            position: absolute;
-            left: 30px;
-        }
-
-        div#android img {
-            width: 250px;
-            transform: translate(-20% );
-        }
-
-        
-
-        div#cordel img{
-            width: 250px;
-        }
-
-        
-
-        }
-        
-
-    </style>
+    <link rel="stylesheet" href="estilo/projetos.css">
 </head>
 <body>
     <main>
@@ -124,20 +20,22 @@
         </section>
 
         <section id="projetos">
-            <div id="android">
+            <div class="android">
                 <h2>Site Android</h2>
                 <p>Site sobre o mascote do Android e sua criadora.</p>
-                <a href="https://lucaslimal04.github.io/projeto-android/" target="_blank"><img src="imagens/dan-droids.png" alt="dan-droids" width="350px"></a>
+                <a href="https://lucaslimal04.github.io/projeto-android/" target="_blank"><img src="imagens/dan-droids.png" alt="dan-droids"></a>
             </div>
                 
-            <div id="cordel">
+            <div class="cordel">
                 <h2>Site Cordel</h2>
                 <p>Site sobre o cordel de Milton Duarte, feito com o background image de fundo do site.</p>
-                <a href="https://lucaslimal04.github.io/projeto-cordel/"><img src="imagens/cordel.PNG" alt="Cordel Moderno" width="350px"></a>
+                <a href="https://lucaslimal04.github.io/projeto-cordel/"><img src="imagens/cordel.PNG" alt="Cordel Moderno"></a>
             </div>
 
-            <div id="social">
-
+            <div class="linkedin">
+                <h2>Site Linkedin</h2>
+                <p>Clone de minha página de perfil do <strong>LinkedIn</strong> com HTML e CSS, também trabalhei em sua responsividade para telas menores.</p>
+                <a href="https://lucaslimal04.github.io/site-linkedin/"><img src="imagens/linkedin.PNG" alt=""></a>
             </div>
         </section>
     </main>
