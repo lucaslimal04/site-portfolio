@@ -14,17 +14,13 @@ main{
     height: 1200px;
 }
 
-#home img{
-    position: absolute;
+.home img{
+    position: relative;
     width: 50px;
     border-radius: 50%;
-    left: 345px;
+    left: 300px;
     top: 27px;
-}
-
-#home img:hover{
-    width: 60px;
-    transform: translate(-3px, -3px);
+    transition: .3s;
 }
 
 section#sobre{
@@ -36,10 +32,6 @@ section#sobre a{
     
 }
 
-section#sobre a:hover{
-    text-decoration: underline;
-}
-
 .android{
     margin: 100px;
 }
@@ -47,6 +39,7 @@ section#sobre a:hover{
 .android img {
     width: 350px;
     border-radius: 80px;
+    transition: .5s;
 }
 
 .cordel {
@@ -56,6 +49,7 @@ section#sobre a:hover{
 .cordel img{
     width: 350px;
     border-radius: 80px;
+    transition: .5s;
 }
 
 .linkedin {
@@ -65,47 +59,60 @@ section#sobre a:hover{
 .linkedin img {
     width: 350px;
     border-radius: 80px;
+    transition: .5s;
 }
 
-@media screen and (min-width:769px) {
 
-    .android img:hover{
-    border: 1px solid black;
-    transition: .5s;
-    width: 400px;
-    height: 150px;
-    transform: translate(-3px, -3px);
-}
+@media screen and (min-width:768px) {
+    
+ /* Apenas :hover */
 
-    .cordel img:hover{
-    transition: .5s;
-    width: 400px;
-    height: 130px;
-    transform: translate(-3px, -3px);
+    .home img:hover{
+        width: 60px;
+        transform: translate(-3px, -3px);
     }
 
+    #sobre a:hover {
+        text-decoration: underline;
+    } 
+
+    .android img:hover{
+        border: 1px solid black;
+        transition: .5s;
+        width: 400px;
+        height: 150px;
+        transform: translate(-3px, -3px);
+    }
+
+    .cordel img:hover{
+        transition: .5s;
+        width: 400px;
+        height: 130px;
+        transform: translate(-3px, -3px);
+        }
+
     .linkedin img:hover{
-    transition: .5s;
-    width: 400px;
-    height: 100px;
-    transform: translate(-3px, -3px);
-}
+        transition: .5s;
+        width: 400px;
+        height: 100px;
+        transform: translate(-3px, -3px);
+    }
 }
 
 @media screen and (max-width:768px) {
 
-    main{
+main {
     border-radius: 15px;
     margin: auto;
     text-align: center;
     background-color: white;
     width: 350px;
-    height: 1200px;
+    height: 1300px;
+    
 } 
 
-.home img{
-    position: relative;
-    left: 30px;
+.home img {
+    left: 135px;
 }
 
 .android img {
@@ -113,7 +120,7 @@ section#sobre a:hover{
     transform: translate(-20% );
 }
 
-.cordel img{
+.cordel img {
     width: 250px;
     transform: translate(-20% );
 }
@@ -122,5 +129,6 @@ section#sobre a:hover{
     width: 250px;
     transform: translate(-20% );
 }
+
 
 }
