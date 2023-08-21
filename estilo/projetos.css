@@ -11,7 +11,7 @@ main{
     text-align: center;
     background-color: white;
     width: 700px;
-    height: 1500px;
+    height: 1510px;
 }
 
 .home img{
@@ -73,6 +73,11 @@ section#sobre a{
     border: 2px solid rgba(0, 0, 0, 0.233);
 }
 
+footer {
+    color: rgb(170, 170, 170);
+    font-weight: bolder;
+}
+
 
 @media screen and (min-width:768px) {
     
@@ -126,7 +131,7 @@ main {
     text-align: center;
     background-color: white;
     width: 350px;
-    height: 1700px;
+    height: 1730px;
     
 } 
 
